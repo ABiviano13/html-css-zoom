@@ -21,10 +21,21 @@ li{
     list-style: none;
 }
 
+a{
+    text-decoration: none;
+    color: currentColor;
+}
+
+
+/*  MAIN  */
+body{
+    height: 100vh;
+}
+
 .main-content{
     background-color: black;
     width: 100%;
-    height: 100vh;
+    padding-bottom: 10px;
 }
 
 .row{
@@ -44,10 +55,12 @@ li{
     height: 150px;
     margin-bottom: -30px;
 }
+
 .absolute{
     position: absolute;
     top: 80px;
 }
+
 .name{
     padding: 2px;
     background-color: rgba(111, 108, 108, 0.7);
@@ -60,18 +73,22 @@ li{
     font-weight: 900;
     content: "\f131";
 }
+
 .speaker-view{
     display: flex;
-    gap: 5px;
+    gap: 3px;
     position: absolute;
     right: 0;
 }
+
 .view{
     height: 15px;
     top: 0;
     right: 0;
     margin: 5px;
     border-radius: 3px;
+    text-align: center;
+    font-size: 10px;
 }
 
 .speaker::before{
@@ -79,6 +96,47 @@ li{
     font-weight: 900;
     content: "\f00a";
 }
+
+/* FOOTER */
+.page-content{
+    background-color: #191f28;
+    color: white;
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.page-content > ol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+}
+
+li{
+    display: flex;
+    justify-content: center;
+}
+
+.ab-foot{
+    text-align: center;
+    position: absolute;
+    bottom: 25px;
+}
+
+li .text-icon{
+    font-size: 10px;
+}
+
+.square{
+    background-color: #4a4a4a;
+    padding: 20px;
+    margin: -10px;
+    color: red;
+}
+
 
 /* DEBUG */
 .debug .row{
