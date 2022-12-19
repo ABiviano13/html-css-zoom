@@ -1,0 +1,50 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 2000px;
+    margin: 0 auto;
+}
+
+img{
+    max-width: 100%;
+}
+
+ul,
+ol,
+li{
+    list-style: none;
+}
+
+.container{
+    /* width: 2000px;
+    height: 1009px; */
+    height: 100vh;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.col{
+    flex-basis: calc(100% / 8);
+}
+
+/* DEBUG */
+.debug .row{
+    background-color: blueviolet;
+    padding: 20px;
+}
+.debug .col{
+    background-color: aquamarine;
+    padding: 30px;
+}
+
