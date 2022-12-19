@@ -11,6 +11,7 @@
 
 img{
     max-width: 100%;
+
 }
 
 ul,
@@ -23,6 +24,7 @@ li{
     /* width: 2000px;
     height: 1009px; */
     height: 100vh;
+    background-color: black;
 }
 
 .row{
@@ -32,10 +34,27 @@ li{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding-top: 78px;
 }
 
 .col{
+    position: relative;
     flex-basis: calc(100% / 8);
+    width: 262px;
+    height: 150px;
+}
+.name{
+    position: absolute;
+    bottom: 40px;
+    padding: 2px;
+    background-color: rgba(111, 108, 108, 0.8);
+    color: white;
+    font-size: 10px;
+}
+.name::before{
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    content: "\f131";
 }
 
 /* DEBUG */
@@ -45,6 +64,5 @@ li{
 }
 .debug .col{
     background-color: aquamarine;
-    padding: 30px;
 }
 
